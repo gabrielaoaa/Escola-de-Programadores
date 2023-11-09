@@ -4,23 +4,34 @@
     --beige-300: #d6daa3;
     --white-300: #fff;
     font-family: 'Montserrat', sans-serif;
+    
 
 }
 
 body{
-    margin: 0;
+    background-color: beige;
     font-family: 'Montserrat', sans-serif;
+    color:#503d1b;
+    font-size: 1rem;
+   
 
 }
 
 p{
-    color: var(--brown-300)
+    background-color: beige;
+    text-align: center;
+    color: var(--brown-300);
     font-size: 1rem;
     font-weight: 400;
+    padding: 2%;
 }
 
 h1{
-    color: var(--brown-300)
+    background-color: beige;
+    text-align: center;
+    font-size: medium;
+    color:#503d1b;
+    padding: 1%;
 }
 .menu{
 justify-content: space-evenly;
@@ -30,7 +41,23 @@ display: flex;
 padding: 1%;
 }
 
-
 .botaoMenu{
-    text-decoration: none
+    color:#503d1b;
+    font-size: 1rem;
+    background-color:beige;
+    text-decoration: none;
+
 }
+
+.container-sobre-mim{
+   
+    background-color: beige;
+    }
+    
+.content{
+   align-items: center;
+    background-color: beige;
+
+        
+        
+}    
