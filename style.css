@@ -46,17 +46,18 @@ padding: 3%;
     font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
 
 
 }
 
 .botaoMenu:hover{
     background-color: beige;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 20px;
+   
 }
 
 
