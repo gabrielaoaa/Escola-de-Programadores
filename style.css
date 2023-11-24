@@ -1,49 +1,49 @@
-:root{
+:root {
     --brown-200: #9c7a3a;
     --brown-300: #503d1b;
     --beige-300: #d6daa3;
     --white-300: #fff;
     font-family: 'Montserrat', sans-serif;
-    
+
 
 }
 
-body{
-  background-image: url('img/marmore.jpg');
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  font-size: 16px;
+body {
+    background-image: url('img/marmore.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 16px;
 
 }
 
-p{ 
+p {
     text-align: center;
     color: var(--brown-300);
     font-size: 1rem;
     font-weight: 400;
     padding: 2%;
-    margin:0% !important;
+    margin: 0% !important;
 }
 
-h1{
-    
+h1 {
+
     text-align: center;
-    color:#503d1b;
+    color: #503d1b;
     padding: 1%;
 }
 
 
 
-.menu{
-justify-content: space-evenly;
-align-items: center;
-display: flex;
-padding: 3%;
+.menu {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    padding: 3%;
 }
 
-.botaoMenu{
-    color:#503d1b;
+.botaoMenu {
+    color: #503d1b;
     font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
@@ -56,25 +56,25 @@ padding: 3%;
 }
 
 
-.botaoMenu:hover{
+.botaoMenu:hover {
     background-color: #b2a485;
     color: #fff;
-   
+
 }
 
-.gabi-color{
+.gabi-color {
     background-color: #b2a485;
     border-radius: 70px;
     border-color: #b2a485;
 }
 
-.gabi-color:hover{
-    background-color:#fff;
+.gabi-color:hover {
+    background-color: #fff;
     color: var(--brown-300);
     border-color: #fff;
 }
 
-.btn-big{
+.btn-big {
     font-size: 25px;
     width: 400px;
     background-color: #b2a485;
@@ -82,29 +82,29 @@ padding: 3%;
     border-color: #b2a485;
 }
 
-.btn-big:hover{
-    background-color:#fff;
+.btn-big:hover {
+    background-color: #fff;
     color: var(--brown-300);
     border-color: #fff;
 }
 
-.container-sobre-mim{
-   align-items: center ;
-   display: flex;
-   flex-wrap: wrap;
+.container-sobre-mim {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
 
-    }
-    
-.content{
-    align-items: center;        
+}
+
+.content {
+    align-items: center;
     padding: 50px 0;
-}  
+}
 
-.modal{
+.modal {
     opacity: 0.8;
 }
 
-.divider{
+.divider {
     height: 3px;
     width: 200px;
     margin: 0px auto 50px;
@@ -112,16 +112,17 @@ padding: 3%;
     border-radius: 50px;
 }
 
-.social{
+.social {
     margin: 0 20px;
 }
 
-.imagem-procedimento{
+.imagem-procedimento {
     border-radius: 5px;
     border-color: #b2a485;
 }
+
 @media screen and (max-width: 768px) {
-    
+
     body {
         font-size: 14px;
     }
@@ -130,9 +131,10 @@ padding: 3%;
         max-width: 100%;
         height: auto;
     }
+
     .container {
-        width: 80%; 
-        font-size: 14px; 
+        width: 80%;
+        font-size: 14px;
     }
-    
+
 }
