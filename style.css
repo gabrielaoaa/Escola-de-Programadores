@@ -13,7 +13,6 @@ body{
   background-size: cover; 
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  padding-left: 50px;
   font-size: 16px;
 
 }
@@ -30,7 +29,6 @@ p{
 h1{
     
     text-align: center;
-    font-size: medium;
     color:#503d1b;
     padding: 1%;
 }
@@ -57,11 +55,38 @@ padding: 3%;
 
 }
 
+
 .botaoMenu:hover{
-    background-color: beige;
+    background-color: #b2a485;
+    color: #fff;
    
 }
 
+.gabi-color{
+    background-color: #b2a485;
+    border-radius: 70px;
+    border-color: #b2a485;
+}
+
+.gabi-color:hover{
+    background-color:#fff;
+    color: var(--brown-300);
+    border-color: #fff;
+}
+
+.btn-big{
+    font-size: 25px;
+    width: 400px;
+    background-color: #b2a485;
+    border-radius: 70px;
+    border-color: #b2a485;
+}
+
+.btn-big:hover{
+    background-color:#fff;
+    color: var(--brown-300);
+    border-color: #fff;
+}
 
 .container-sobre-mim{
    align-items: center ;
@@ -71,11 +96,30 @@ padding: 3%;
     }
     
 .content{
-   align-items: center;        
-        
+    align-items: center;        
+    padding: 50px 0;
 }  
 
+.modal{
+    opacity: 0.8;
+}
 
+.divider{
+    height: 3px;
+    width: 200px;
+    margin: 0px auto 50px;
+    background-color: #503d1b;
+    border-radius: 50px;
+}
+
+.social{
+    margin: 0 20px;
+}
+
+.imagem-procedimento{
+    border-radius: 5px;
+    border-color: #b2a485;
+}
 @media screen and (max-width: 768px) {
     
     body {
