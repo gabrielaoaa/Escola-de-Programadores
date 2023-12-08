@@ -130,7 +130,15 @@ h1 {
 
 @media screen and (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: small;
+    }
+
+    p{
+        font-size: small;
+    }
+
+    h1{
+        font-size: medium;
     }
 
     img {
@@ -151,5 +159,10 @@ h1 {
 
     .container-sobre-mim {
         display: block;
+    }
+   
+    .content {
+        align-items: center;
+        padding: 50px 0;
     }
 }
