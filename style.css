@@ -3,18 +3,29 @@
     --brown-300: #503d1b;
     --beige-300: #d6daa3;
     --white-300: #fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
 
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px -10px #b2a485;
+    }
+    to {
+        box-shadow: 0 0 10px 10px #b2a485;
+    }
+}
 
+#sobreMim img {
+    border-radius: 50%;
+    animation: glow 1s infinite alternate;
 }
 
 body {
-    background-image: url('img/marmore.jpg');
+    background-image: url("img/marmore.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-size: 16px;
-
 }
 
 p {
@@ -27,16 +38,13 @@ p {
 }
 
 h1 {
-
     text-align: center;
     color: #503d1b;
     padding: 1%;
 }
 
-
-
 .menu {
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     display: flex;
     padding: 3%;
@@ -47,19 +55,36 @@ h1 {
     font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
+    margin: 0 5em;
     border-radius: 20px;
-
+    position: relative;
 }
 
+.botaoMenu::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    border-radius: 15px;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background-color: #b2a485;
+}
+
+.botaoMenu:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
 .botaoMenu:hover {
-    background-color: #b2a485;
     color: #fff;
-
 }
 
 .gabi-color {
@@ -89,10 +114,9 @@ h1 {
 }
 
 .container-sobre-mim {
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
-
+    align-items: center;
 }
 
 .content {
@@ -130,15 +154,7 @@ h1 {
 
 @media screen and (max-width: 768px) {
     body {
-        font-size: small;
-    }
-
-    p{
-        font-size: small;
-    }
-
-    h1{
-        font-size: medium;
+        font-size: 14px;
     }
 
     img {
@@ -159,10 +175,5 @@ h1 {
 
     .container-sobre-mim {
         display: block;
-    }
-   
-    .content {
-        align-items: center;
-        padding: 50px 0;
     }
 }
