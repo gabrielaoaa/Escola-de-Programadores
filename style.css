@@ -132,6 +132,10 @@ h1 {
         height: auto;
     }
 
+    .botaoMenu{
+        font-size: small;
+    }
+
     .container {
         width: 80%;
         font-size: 14px;
