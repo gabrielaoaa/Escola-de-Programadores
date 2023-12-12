@@ -17,23 +17,22 @@
     crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css" />
-
 </head>
 
 <body>
-
   <div class="custom-audio-player">
-      <audio class="audio" controls>
+      <audio id="audio" controls>
           <source src="audio/Kygo - Here For You (Official Instrumental)_ID.mp3" type="audio/mp3">
           Your browser does not support the audio tag.
       </audio>
       <div class="controls">
-          <button class="play-pause">Play</button>
-          <input class="volume" type="range" min="0" max="1" step="0.1" value="1">
-          <progress class="progress" value="0" max="100"></progress>
+          <div id="control-btns">
+            <button class="btn gabi-color" id='play-btn'>Play</button>
+            <button class="btn gabi-color" id='pause-btn'>Pause</button>
+          </div>
+          <input id='progress' type="range" min="0" max="1" step="0.1" value="1">
       </div>
   </div>
-
 
   <section>
     <div class="menu">
@@ -400,7 +399,30 @@
     </div>
   </section>
 
+  <script>
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('play-btn');
+    const pauseBtn = document.getElementById('pause-btn');
+    const progress = document.getElementById('progress');
+    
+    audio.style.display = 'none';
+    pauseBtn.style.display = 'none';
 
+    playBtn.onclick = () => {
+      audio.play()
+      pauseBtn.style.display = 'unset'
+      playBtn.style.display = 'none'
+    }
+
+    pauseBtn.onclick = () => {
+      audio.pause()
+      playBtn.style.display = 'unset'
+      pauseBtn.style.display = 'none'
+    }
+
+    progress.onchange = (e) => {
+      audio.volume = e.target.value
+    }
+  </script>
 </body>
-
 </html>
