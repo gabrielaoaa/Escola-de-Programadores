@@ -21,7 +21,19 @@
 </head>
 
 <body>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/GQpKl4nUKzs?si=62Qpqdcj9TM1Sq7z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  <div class="custom-audio-player">
+      <audio class="audio" controls>
+          <source src="audio/Kygo - Here For You (Official Instrumental)_ID.mp3" type="audio/mp3">
+          Your browser does not support the audio tag.
+      </audio>
+      <div class="controls">
+          <button class="play-pause">Play</button>
+          <input class="volume" type="range" min="0" max="1" step="0.1" value="1">
+          <progress class="progress" value="0" max="100"></progress>
+      </div>
+  </div>
+
 
   <section>
     <div class="menu">
